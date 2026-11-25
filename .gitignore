@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Локальные настройки агентов
+.claude/settings.local.json
+# Генерируется из .agents/skills командой npm run skills:link
+.claude/skills/
+# Генерируется из .agents/agents командой npm run agents:sync
+.claude/agents/
+.codex/agents/

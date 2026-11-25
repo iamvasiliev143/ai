@@ -1,0 +1,15 @@
+{
+  "name": "ai-native-template",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup:ai": "npm run skills:link && npm run agents:sync",
+    "check": "npm run check:docs",
+    "check:docs": "node .agents/skills/documentation/scripts/check-links.mjs && node scripts/sync-agents.mjs --check",
+    "skills:link": "node scripts/link-agent-skills.mjs",
+    "agents:sync": "node scripts/sync-agents.mjs",
+    "agents:check": "node scripts/sync-agents.mjs --check"
+  }
+}

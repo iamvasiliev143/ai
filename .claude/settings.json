@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "enabledMcpjsonServers": ["github", "notion"],
+  "permissions": {
+    "deny": [
+      "Read(**/.env)",
+      "Read(**/.env.local)",
+      "Read(**/.env.*.local)",
+      "Read(**/.env.development)",
+      "Read(**/.env.test)",
+      "Read(**/.env.staging)",
+      "Read(**/.env.production)",
+      "Bash(cat .env)",
+      "Bash(cat .env.local)",
+      "Bash(cat .env.production)",
+      "Bash(type .env)",
+      "Bash(more .env)",
+      "Bash(less .env)",
+      "Bash(head .env)",
+      "Bash(tail .env)",
+      "PowerShell(Get-Content .env)",
+      "PowerShell(gc .env)",
+      "PowerShell(cat .env)",
+      "PowerShell(type .env)"
+    ]
+  }
+}
